@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+    /* justify-content: center; */
+    /* margin:0; */
+    padding:0;
+    
+}
+.main_container{
+    /* position: relative;
+    left: 10%; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.20rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding:10px;
+    width:80%;
+}
+
+  /* left side  */
+
+.flex-item-left {
+    background-color: #f1f1f1;
+    /* padding: 3vh; */
+    font-size: 25px;
+    flex: 50%;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+#image{
+      /* position: relative; */
+      /* top: 20px; */
+      width:50vh;
+      border-radius: 20px 5px 20px 5px;;
+}
+#sendtric{
+    width:27%;
+    /* Position:relative; */
+    /* top:20px; */
+    border-radius:7px;
+    box-shadow: 0px 0px 20px 0px rgb(116, 116, 116);
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-Right: 15px;
+}
+#timing{
+    /* border:1px solid red; */
+    /* display: flex; */
+    font-size:18px;
+    width:150px;
+    height: 50px;  
+    /* justify-content: center; */
+    border-radius: 8px;
+    margin: 20px;
+    padding:15px;
+    overflow: hidden;
+
+}
+.div_timing{
+      /* border:1px solid red; */
+      display:flex;
+      /* align-items: center; */
+      justify-content:center;
+}
+  /* Right side  */
+
+.flex-item-right {
+    background-color: #f1f1f1;
+    padding: 50px;
+    /* padding: 10%; */
+    padding-right: 40px;
+    /* padding-right: 200px; */
+    flex: 50%;
+    text-align: left;
+    /* display: flex; */
+    /* float: left; */
+}
+/* buttons  */
+#buttons a{
+    font-size:17px;
+    margin-left: 20px;
+}
+
+
+.flex-item-right a{
+    /* border:1px solid red; */
+    position:relative;
+    top:30px;
+    
+    border-radius: 10px;
+    padding:5px;
+    text-decoration: none;
+
+    padding-right:30px;
+    padding-left:30px;
+    background-color:#00629B;
+    border:1px solid #00629B;
+    color: white;
+}
+#time{
+    color:blue;
+}
+#tag-p{
+    font-size:13px;
+}
+#seemore{
+    background-color:white;
+    color:black;
+    margin-left: 20px;
+    border: 1px solid rgb(158, 158, 158);
+}
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 600px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
+  @media screen and (max-width: 1200px) and (min-width: 861px){
+      .flex-item-right a{
+          font-size: 18px;
+          width:10%;
+          padding:5px;
+          padding-right:10px;
+          padding-left:10px;
+      }
+      
+  }
+  @media screen and (max-width: 861px){
+    .flex-item-right{
+        padding: 30px;
+      }
+  }
+  @media screen and (max-width: 510px){
+    .flex-item-left img{
+        width:15rem;
+    }
+    #buttons{
+        display: flex;
+        flex-wrap: wrap;
+        /* margin-left: 10px; */
+    }
+  }
+  @media screen and (max-width: 350px){
+    .flex-item-left img{
+        width:13rem;
+    }
+    .flex-item-right a{
+        display: flex;
+        flex-wrap: wrap;
+        width:50%;
+        padding:2px;
+        padding-right:3px;
+        padding-left:3px;
+        margin:10px;
+    }
+  }
+@media screen and (max-width: 621px){
+    .flex-item-right a{
+        font-size:13px;
+        padding: 10px;
+        padding-right:20px;
+        padding-left:20px;
+        margin:5px;
+    }
+    .main_container{
+        font-size:10px;
+    }
+}
+@media screen and (max-width: 530px){
+    #image{
+       width:40vh;
+    }
+
+}
+@media screen and (max-width: 420px){
+    #image{
+       width:35vh;
+    }
+    #sendtric{
+        width:50%;
+    }
+
+}
+@media screen and (max-width: 376px){
+    #image{
+       width:28vh;
+    }
+
+}
+
+@media screen and (max-width: 541px){
+    .flex-item-right a{
+        top:20px;
+        font-size:13px;
+        padding: 5px;
+        padding-right:15px;
+        padding-left:15px;
+        margin:3px;
+    }
+}
+@media screen and (max-width: 355px){
+    .flex-item-right a{
+        top:20px;
+        font-size:13px;
+        padding: 5px;
+        padding-right:8px;
+        padding-left:8px;
+        margin:3px;
+    }
+    #buttons a{
+        font-size:9px;
+    }
+}
